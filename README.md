@@ -1,44 +1,38 @@
 # Gold & Silver Market Analysis
 
-A data analytics project focused on analyzing gold and silver prices using historical data, statistical analysis, and visualization.
+An end-to-end analytics project analyzing Gold and Silver prices, volatility behavior,
+and evaluating technical indicators using historical data.
 
 ## Project Goals
-- Analyze historical gold and silver price trends
-- Compare volatility and returns
-- Build a clean, professional analytics pipeline
-- Create a portfolio-ready project for data analyst roles
+- Analyze long-term Gold and Silver price trends
+- Compare volatility and risk characteristics
+- Evaluate common technical indicators using backtesting
+- Communicate insights through an interactive BI-style dashboard
+- Build a portfolio-ready analytics case study
 
 ## Tech Stack
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- yFinance
-- Streamlit (later)
+- Plotly
+- Streamlit
 
-## Project Structure
+## Key Analysis
+- Price trend comparison
+- Gold–Silver ratio analysis
+- Daily and rolling volatility
+- Bollinger Band signal evaluation
+- Strategy vs Buy-and-Hold backtesting
 
-## Bollinger Band Strategy – Backtesting Results
+## Dashboard
+An interactive Streamlit dashboard is included to present insights for non-technical
+stakeholders using clean KPIs and interactive charts.
 
-A historical backtest was conducted to evaluate whether Bollinger Band signals add value beyond visual analysis for Gold and Silver prices.
+## Backtesting Summary
+Bollinger Band signals captured short-term mean-reversion but underperformed a
+buy-and-hold approach for long-term trending assets. The analysis highlights the
+importance of benchmarking intuitive indicators against simple baselines.
 
-### Strategy Logic
-- Buy when price crosses below the lower Bollinger Band  
-- Sell when price crosses above the upper Bollinger Band  
-- 20-day moving average with ±2 standard deviations  
-- Long-only, one position at a time  
-- 0.1% transaction cost per trade  
-
-### Key Results
-- The strategy generated a low number of trades on daily data  
-- Buy-and-hold outperformed the Bollinger strategy in total return  
-- Gold exhibited smoother equity curves with lower drawdowns  
-- Silver showed higher volatility, more frequent signals, and larger drawdowns  
-
-### Interpretation
-Bollinger Band signals captured short-term mean-reversion moves but failed to outperform a passive buy-and-hold approach for long-term trending assets like Gold and Silver. The strategy reduced exposure during extreme price movements but sacrificed participation in sustained trends.
-
-### Conclusion
-This backtest highlights the importance of validating intuitive technical indicators using historical data. In this context, Bollinger Bands are more effective as a risk-awareness and market-condition tool rather than a return-maximizing trading strategy.
-
-*Results are for analytical and educational purposes only.*
+## Conclusion
+This project demonstrates an evidence-based approach to market analysis, focusing on
+validation, risk awareness, and insight communication rather than prediction.
